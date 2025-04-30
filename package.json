@@ -5,25 +5,9 @@
   "license": "MIT",
   "author": "Luis Felipe Jimenez Lozano (kizansolutions)",
   "type": "module",
-  "main": "./dist/ks-adapters.cjs.js",
-  "module": "./dist/ks-adapters.es.js",
-  "browser": "./dist/ks-adapters.umd.js",
-  "exports": {
-    ".": {
-      "import": "./dist/ks-adapters.es.js",
-      "require": "./dist/ks-adapters.cjs.js",
-      "browser": "./dist/ks-adapters.umd.js"
-    }
-  },
-  "files": ["dist"],
-  "scripts": {
-    "build": "vite build"
-  },
+  "main": "./src/index.js",
   "dependencies": {
     "moment": "^2.30.1",
     "socket.io-client": "^4.8.1"
-  },
-  "devDependencies": {
-    "vite": "^5.0.0"
   }
 }

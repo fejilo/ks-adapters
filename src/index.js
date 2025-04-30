@@ -11,14 +11,3 @@ export default {
   Event,
   Socket,
 };
-
-// CommonJS
-if (typeof module !== "undefined" && module.exports) {
-  module.exports = {
-    Auth,
-    Cache,
-    Event,
-    Socket,
-    default: { Auth, Cache, Event, Socket },
-  };
-}
