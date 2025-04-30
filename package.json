@@ -4,13 +4,20 @@
   "description": "Adapter library with multiple implementations, designed to be used exclusively on the front-end, although some may also be useful on the back-end.",
   "license": "MIT",
   "author": "Luis Felipe Jimenez Lozano (kizansolutions)",
-  "type": "module",
-  "main": "dist/ks-adapters.umd.js",
+  "main": "dist/ks-adapters.cjs.js",
   "module": "dist/ks-adapters.es.js",
-  "files": ["dist"],
+  "umd:main": "dist/ks-adapters.umd.js",
+  "exports": {
+    ".": {
+      "require": "./dist/ks-adapters.cjs.js",
+      "import": "./dist/ks-adapters.es.js",
+      "umd": "./dist/ks-adapters.umd.js"
+    }
+  },
   "scripts": {
     "build": "vite build"
   },
+  "type": "module",
   "dependencies": {
     "moment": "^2.30.1",
     "socket.io-client": "^4.8.1"
