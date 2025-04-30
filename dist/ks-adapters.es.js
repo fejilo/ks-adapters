@@ -5303,3 +5303,4 @@ export {
   Ht as Socket,
   Vl as default
 };
+//# sourceMappingURL=ks-adapters.es.js.map
