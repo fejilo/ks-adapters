@@ -1,0 +1,101 @@
+{
+  "userInfo": {
+    "id": 1,
+    "username": "tyronebfrazier@gmail.com",
+    "firstName": "Tyrone",
+    "lastName": "Frazier",
+    "imageFileId": 99,
+    "imageFileUrl": "test.erpeach.com/api/file/files/12/23",
+    "defaultCampaignId": 14,
+    "defaultCampaignModeId": null,
+    "activeTimeLogId": null /*what is this*/,
+    "metadata": null /* what is this */
+  },
+  "campaignInvitationList": [
+    {
+      "id": 12,
+      "campaignId": 12,
+      "campaignName": "testing",
+      "appId": 17,
+      "roleIdCsv": "1,2,3,4,5",
+      "inviterApproverUserId": null,
+      "joinUserId": 1,
+      "joinEmail": "tyronebfrazier@gmail.com",
+      "createDatetime": 121121541235,
+      "joinTypeId": null /* what is this*/,
+      "joinStatusId": 1,
+      "comments": null
+    }
+  ],
+  "session": {
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhIjoxNywidSI6MSwiYyI6W10sInVjIjpudWxsLCJvYyI6W10sInAiOiIiLCJjcCI6W10sImx0cyI6MSwiYXBwdiI6IjEuMC42NzI1IiwiaWF0IjoxNzQ0MjA2MTYyLCJleHAiOjE3NTE5ODIxNjJ9.GFko5Akz_FaPXKETAcX7unTUuf-giRRUmI4xhe5h6xU",
+    "urlToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhIjoxNywidSI6MSwiYyI6W10sInVjIjpudWxsLCJvYyI6W10sInAiOiIiLCJjcCI6W10sImx0cyI6MSwiYXBwdiI6IjEuMC42NzI1IiwiaWF0IjoxNzQ0MjA2MTYyLCJleHAiOjE3NTE5ODIxNjJ9.GFko5Akz_FaPXKETAcX7unTUuf-giRRUmI4xhe5h6xU",
+    "appVersion": "1.0.6731",
+    "appId": 17,
+    "lts": 1
+  },
+  "campaignList": [
+    {
+      "id": 10177,
+      "campaignUserId": 1344,
+      "campaignName": "ScotDee1 Test",
+      "isPrimary": true,
+      "isOwner": true,
+      "isActive": 1,
+      "parentCampaignId": null,
+      /* what is this */
+      "defaultFacilityId": 100012,
+      "defaultFacilityName": "ScotDee1 Test",
+      "defaultFacilityNickName": "scotdee1",
+      "defaultTaskProjectId": 100003000,
+      "defaultRoleId": 7497, //what is this?
+      "employeeId": null,
+      "activeTimeLogId": null,
+      "isThisApp": 1 /* una campaña puede ser una App? */, //campaña o app o facility?
+      "campaignUserMetada": null
+    },
+    {
+      "id": 1,
+      "campaignUserId": 1,
+      "campaignName": "tyronebfrazier@gmail.com",
+      "isPrimary": false,
+      "isOwner": true,
+      "isActive": 1,
+      "parentCampaignId": null,
+      /* what is this */
+      "defaultFacilityId": 1124,
+      "defaultFacilityName": "Tyrone's Room",
+      "defaultFacilityNickName": "Tyrone's Rm",
+      "defaultTaskProjectId": 100003000,
+      "defaultRoleId": 7497, //what is this?
+      "employeeId": null,
+      "activeTimeLogId": null,
+      "isThisApp": 1 /* una campaña puede ser una App? */, //campaña o app o facility?
+      "campaignUserMetada": null
+    }
+  ],
+  "dataproviderDefaultModes": [
+    {
+      "dataproviderName": "action_form_dataprovider",
+      "defaultDataproviderModeId": 157,
+      /* what is this */
+      "defaultSearchDataproviderModeId": 0
+    },
+    {
+      "dataproviderName": "ad_location_data_provider",
+      "defaultDataproviderModeId": 148,
+      "defaultSearchDataproviderModeId": 0
+    }
+  ],
+  /* 
+        The backend should be the current user data by the default campaign or mode campaign_ids
+        This Counts should be update by sockets not with networks calls.
+    */
+  "currentData": {
+    "callLogCount": 12,
+    "countConversationWithUnredaMsgs": 13,
+    "taskListCount": 1,
+    "currentTimeLogId": "12/04/2025 00:00:00", // what is this?
+    "userJoinCount": 12
+  }
+}
