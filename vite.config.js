@@ -5,15 +5,13 @@ export default defineConfig({
     lib: {
       entry: "src/index.js",
       name: "ks-adapters",
-      formats: ["es", "cjs", "umd"],
       fileName: (format) => `ks-adapters.${format}.js`,
+      formats: ["es", "cjs", "umd"], // ESM, CJS y UMD
     },
     rollupOptions: {
-      external: [],
       output: {
         globals: {
           "socket.io-client": "io",
-          moment: "moment",
         },
       },
     },
