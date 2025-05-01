@@ -1,4 +1,4 @@
-import SocketIO from './strategies/SocketIO.js';
+import SocketIO from "./strategies/SocketIO.js";
 
 class Socket {
   /**
@@ -7,11 +7,11 @@ class Socket {
    * @param {String} serverUrl - server URL
    * @param {Object} options - options for the socket connection
    */
-  constructor(strategy = 'socketIO', serverUrl, options = {}) {
-    if (!strategy) throw new Error('socket strategy is required');
-    if (!serverUrl) throw new Error('Server URL is required');
+  constructor(strategy = "socketIO", serverUrl, options = {}) {
+    if (!strategy) throw new Error("socket strategy is required");
+    if (!serverUrl) throw new Error("Server URL is required");
     switch (strategy) {
-      case 'socketIO':
+      case "socketIO":
         this.strategy = new SocketIO(serverUrl, options);
         break;
       default:
@@ -27,22 +27,22 @@ class Socket {
   }
 
   on(eventName, callback) {
-    if (!eventName) throw new Error('Event name is required');
+    if (!eventName) throw new Error("Event name is required");
     return this.strategy.on(eventName, callback);
   }
 
   off(eventName, callback) {
-    if (!eventName) throw new Error('Event name is required');
+    if (!eventName) throw new Error("Event name is required");
     return this.strategy.off(eventName, callback);
   }
 
   emit(eventName, payload) {
-    if (!eventName) throw new Error('Event name is required');
+    if (!eventName) throw new Error("Event name is required");
     return this.strategy.emit(eventName, payload);
   }
 
   once(eventName, callback) {
-    if (!eventName) throw new Error('Event name is required');
+    if (!eventName) throw new Error("Event name is required");
     return this.strategy.once(eventName, callback);
   }
 }

@@ -1,10 +1,10 @@
-import EventBus from './strategies/EventBus.js';
+import EventBus from "./strategies/EventBus.js";
 
 class Event {
-  constructor(strategy = 'eventBus') {
-    if (!strategy) throw new Error('Event strategy is required');
+  constructor(strategy = "eventBus") {
+    if (!strategy) throw new Error("Event strategy is required");
     switch (strategy) {
-      case 'eventBus':
+      case "eventBus":
         this.strategy = new EventBus();
         break;
       default:
@@ -12,19 +12,19 @@ class Event {
     }
   }
   subscribe(eventName, callback) {
-    if (!eventName) throw new Error('Event name is required');
+    if (!eventName) throw new Error("Event name is required");
     return this.strategy.subscribe(eventName, callback);
   }
   unsubscribe(eventName, callback) {
-    if (!eventName) throw new Error('Event name is required');
+    if (!eventName) throw new Error("Event name is required");
     return this.strategy.unsubscribe(eventName, callback);
   }
   emit(eventName, payload) {
-    if (!eventName) throw new Error('Event name is required');
+    if (!eventName) throw new Error("Event name is required");
     return this.strategy.emit(eventName, payload);
   }
   subscribeOnce(eventName, callback) {
-    if (!eventName) throw new Error('Event name is required');
+    if (!eventName) throw new Error("Event name is required");
     return this.strategy.subscribeOnce(eventName, callback);
   }
   clear() {

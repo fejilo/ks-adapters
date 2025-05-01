@@ -1,10 +1,10 @@
-import JWT from './strategies/JWT.js';
-import decompression from './helpers/decompression.js';
+import JWT from "./strategies/JWT.js";
+import decompression from "./helpers/decompression.js";
 class Auth {
-  constructor(strategy = 'JWT') {
-    if (!strategy) throw new Error('Auth strategy is required');
+  constructor(strategy = "JWT") {
+    if (!strategy) throw new Error("Auth strategy is required");
     switch (strategy) {
-      case 'JWT':
+      case "JWT":
         this.strategy = new JWT();
         break;
       default:
